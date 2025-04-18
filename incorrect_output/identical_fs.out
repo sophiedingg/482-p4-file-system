@@ -1,0 +1,483 @@
+
+@@@ #1 disk_readblock: block 0
+Listening on port number: 10000
+
+@@@ #2 port 10000
+found connection at 5
+
+@@@ #3 disk_readblock: block 0
+
+@@@ #4 disk_writeblock: block 1
+
+@@@ #5 disk_writeblock: block 2
+
+@@@ #6 disk_writeblock: block 0
+
+@@@ #7 send 5 24 FS_CREATE user1 /dir1 d
+FINAL MESSAGE: 'FS_CREATE user1 /dir1 d'
+
+@@@ #8 close 5
+found connection at 5
+
+@@@ #9 disk_readblock: block 0
+
+@@@ #10 disk_readblock: block 2
+FINAL MESSAGE: 'FS_CREATE user2 /dir1 d'
+
+@@@ #11 close 5
+found connection at 5
+
+@@@ #12 disk_readblock: block 0
+
+@@@ #13 disk_readblock: block 2
+
+@@@ #14 disk_writeblock: block 3
+
+@@@ #15 disk_writeblock: block 2
+
+@@@ #16 send 5 24 FS_CREATE user1 /file f
+FINAL MESSAGE: 'FS_CREATE user1 /file f'
+
+@@@ #17 close 5
+found connection at 5
+
+@@@ #18 disk_readblock: block 0
+
+@@@ #19 disk_readblock: block 2
+FINAL MESSAGE: 'FS_CREATE user2 /file f'
+
+@@@ #20 close 5
+found connection at 5
+
+@@@ #21 disk_readblock: block 0
+
+@@@ #22 disk_readblock: block 2
+
+@@@ #23 disk_writeblock: block 4
+
+@@@ #24 disk_writeblock: block 2
+
+@@@ #25 send 5 24 FS_CREATE user1 /dir2 d
+FINAL MESSAGE: 'FS_CREATE user1 /dir2 d'
+
+@@@ #26 close 5
+found connection at 5
+
+@@@ #27 disk_readblock: block 0
+
+@@@ #28 disk_readblock: block 2
+FINAL MESSAGE: 'FS_CREATE user2 /dir2 d'
+
+@@@ #29 close 5
+found connection at 5
+
+@@@ #30 disk_readblock: block 0
+
+@@@ #31 disk_readblock: block 2
+
+@@@ #32 disk_readblock: block 4
+
+@@@ #33 disk_writeblock: block 5
+
+@@@ #34 disk_writeblock: block 6
+
+@@@ #35 disk_writeblock: block 4
+
+@@@ #36 send 5 29 FS_CREATE user1 /dir2/dir1 d
+FINAL MESSAGE: 'FS_CREATE user1 /dir2/dir1 d'
+
+@@@ #37 close 5
+found connection at 5
+
+@@@ #38 disk_readblock: block 0
+
+@@@ #39 disk_readblock: block 2
+
+@@@ #40 disk_readblock: block 4
+
+@@@ #41 disk_readblock: block 6
+FINAL MESSAGE: 'FS_CREATE user2 /dir2/dir1 d'
+
+@@@ #42 close 5
+found connection at 5
+
+@@@ #43 disk_readblock: block 0
+
+@@@ #44 disk_readblock: block 2
+
+@@@ #45 disk_readblock: block 4
+
+@@@ #46 disk_readblock: block 6
+
+@@@ #47 disk_writeblock: block 7
+
+@@@ #48 disk_writeblock: block 6
+
+@@@ #49 send 5 30 FS_CREATE user1 /dir2/file6 f
+FINAL MESSAGE: 'FS_CREATE user1 /dir2/file6 f'
+
+@@@ #50 close 5
+found connection at 5
+
+@@@ #51 disk_readblock: block 0
+
+@@@ #52 disk_readblock: block 2
+
+@@@ #53 disk_readblock: block 4
+
+@@@ #54 disk_readblock: block 6
+FINAL MESSAGE: 'FS_CREATE user2 /dir2/file6 f'
+
+@@@ #55 close 5
+found connection at 5
+
+@@@ #56 disk_readblock: block 0
+
+@@@ #57 disk_readblock: block 2
+
+@@@ #58 disk_readblock: block 4
+
+@@@ #59 disk_readblock: block 6
+
+@@@ #60 disk_writeblock: block 8
+
+@@@ #61 disk_writeblock: block 6
+
+@@@ #62 send 5 30 FS_CREATE user1 /dir2/file1 f
+FINAL MESSAGE: 'FS_CREATE user1 /dir2/file1 f'
+
+@@@ #63 close 5
+found connection at 5
+
+@@@ #64 disk_readblock: block 0
+
+@@@ #65 disk_readblock: block 2
+
+@@@ #66 disk_readblock: block 4
+
+@@@ #67 disk_readblock: block 6
+FINAL MESSAGE: 'FS_CREATE user2 /dir2/file1 f'
+
+@@@ #68 close 5
+found connection at 5
+
+@@@ #69 disk_readblock: block 0
+
+@@@ #70 disk_readblock: block 2
+
+@@@ #71 disk_readblock: block 4
+
+@@@ #72 disk_readblock: block 6
+
+@@@ #73 disk_writeblock: block 9
+
+@@@ #74 disk_writeblock: block 6
+
+@@@ #75 send 5 30 FS_CREATE user1 /dir2/file2 f
+FINAL MESSAGE: 'FS_CREATE user1 /dir2/file2 f'
+
+@@@ #76 close 5
+found connection at 5
+
+@@@ #77 disk_readblock: block 0
+
+@@@ #78 disk_readblock: block 2
+
+@@@ #79 disk_readblock: block 4
+
+@@@ #80 disk_readblock: block 6
+FINAL MESSAGE: 'FS_CREATE user2 /dir2/file2 f'
+
+@@@ #81 close 5
+found connection at 5
+
+@@@ #82 disk_readblock: block 0
+
+@@@ #83 disk_readblock: block 2
+
+@@@ #84 disk_readblock: block 4
+
+@@@ #85 disk_readblock: block 6
+
+@@@ #86 disk_writeblock: block 10
+
+@@@ #87 disk_writeblock: block 6
+
+@@@ #88 send 5 30 FS_CREATE user1 /dir2/file3 f
+FINAL MESSAGE: 'FS_CREATE user1 /dir2/file3 f'
+
+@@@ #89 close 5
+found connection at 5
+
+@@@ #90 disk_readblock: block 0
+
+@@@ #91 disk_readblock: block 2
+
+@@@ #92 disk_readblock: block 4
+
+@@@ #93 disk_readblock: block 6
+FINAL MESSAGE: 'FS_CREATE user2 /dir2/file3 f'
+
+@@@ #94 close 5
+found connection at 5
+
+@@@ #95 disk_readblock: block 0
+
+@@@ #96 disk_readblock: block 2
+
+@@@ #97 disk_readblock: block 4
+
+@@@ #98 disk_readblock: block 6
+
+@@@ #99 disk_writeblock: block 11
+
+@@@ #100 disk_writeblock: block 6
+
+@@@ #101 send 5 29 FS_CREATE user1 /dir2/dir2 d
+FINAL MESSAGE: 'FS_CREATE user1 /dir2/dir2 d'
+
+@@@ #102 close 5
+found connection at 5
+
+@@@ #103 disk_readblock: block 0
+
+@@@ #104 disk_readblock: block 2
+
+@@@ #105 disk_readblock: block 4
+
+@@@ #106 disk_readblock: block 6
+FINAL MESSAGE: 'FS_CREATE user2 /dir2/dir2 d'
+
+@@@ #107 close 5
+found connection at 5
+
+@@@ #108 disk_readblock: block 0
+
+@@@ #109 disk_readblock: block 2
+
+@@@ #110 disk_readblock: block 4
+
+@@@ #111 disk_readblock: block 6
+
+@@@ #112 disk_writeblock: block 12
+
+@@@ #113 disk_writeblock: block 6
+
+@@@ #114 send 5 30 FS_CREATE user1 /dir2/file4 f
+FINAL MESSAGE: 'FS_CREATE user1 /dir2/file4 f'
+
+@@@ #115 close 5
+found connection at 5
+
+@@@ #116 disk_readblock: block 0
+
+@@@ #117 disk_readblock: block 2
+
+@@@ #118 disk_readblock: block 4
+
+@@@ #119 disk_readblock: block 6
+FINAL MESSAGE: 'FS_CREATE user2 /dir2/file4 f'
+
+@@@ #120 close 5
+found connection at 5
+
+@@@ #121 disk_readblock: block 0
+
+@@@ #122 disk_readblock: block 2
+
+@@@ #123 disk_readblock: block 4
+
+@@@ #124 disk_readblock: block 6
+
+@@@ #125 disk_writeblock: block 13
+
+@@@ #126 disk_writeblock: block 6
+
+@@@ #127 send 5 30 FS_CREATE user1 /dir2/file5 f
+FINAL MESSAGE: 'FS_CREATE user1 /dir2/file5 f'
+
+@@@ #128 close 5
+found connection at 5
+
+@@@ #129 disk_readblock: block 0
+
+@@@ #130 disk_readblock: block 2
+
+@@@ #131 disk_readblock: block 4
+
+@@@ #132 disk_readblock: block 6
+FINAL MESSAGE: 'FS_CREATE user2 /dir2/file5 f'
+
+@@@ #133 close 5
+found connection at 5
+
+@@@ #134 disk_readblock: block 0
+
+@@@ #135 disk_readblock: block 2
+
+@@@ #136 disk_readblock: block 4
+
+@@@ #137 disk_readblock: block 6
+
+@@@ #138 disk_readblock: block 7
+
+@@@ #139 disk_writeblock: block 14
+
+@@@ #140 disk_writeblock: block 7
+
+@@@ #141 send 5 34 FS_WRITEBLOCK user1 /dir2/file6 0
+FINAL MESSAGE: 'FS_WRITEBLOCK user1 /dir2/file6 0'
+
+@@@ #142 close 5
+found connection at 5
+
+@@@ #143 disk_readblock: block 0
+
+@@@ #144 disk_readblock: block 2
+
+@@@ #145 disk_readblock: block 4
+
+@@@ #146 disk_readblock: block 6
+
+@@@ #147 disk_readblock: block 7
+FINAL MESSAGE: 'FS_WRITEBLOCK user2 /dir2/file6 0'
+
+@@@ #148 close 5
+found connection at 5
+
+@@@ #149 disk_readblock: block 0
+
+@@@ #150 disk_readblock: block 2
+
+@@@ #151 disk_readblock: block 4
+
+@@@ #152 disk_readblock: block 6
+
+@@@ #153 disk_readblock: block 7
+FINAL MESSAGE: 'FS_READBLOCK user2 /dir2/file6 0'
+
+@@@ #154 close 5
+found connection at 5
+
+@@@ #155 disk_readblock: block 0
+
+@@@ #156 disk_readblock: block 2
+
+@@@ #157 disk_readblock: block 4
+
+@@@ #158 disk_readblock: block 6
+
+@@@ #159 disk_readblock: block 7
+
+@@@ #160 disk_readblock: block 14
+
+@@@ #161 send 5 33 FS_READBLOCK user1 /dir2/file6 0
+
+@@@ #162 send 5 512 (Anand David Sophie) EECS Roomies most famous quote: We hold these truths to be self-evident, that all men are created equal, that they are endowed by their Creator with certain unalienable Rights, that among these are Life, Liberty and the pursuit of Happiness. -- That to secure these rights, Governments are instituted among Men, deriving their just powers from the consent of the governed, -- That whenever any Form of Government becomes destructive of these ends, it is the Right of the People to alter or t
+FINAL MESSAGE: 'FS_READBLOCK user1 /dir2/file6 0'
+
+@@@ #163 close 5
+found connection at 5
+
+@@@ #164 disk_readblock: block 0
+
+@@@ #165 disk_readblock: block 2
+
+@@@ #166 disk_readblock: block 4
+
+@@@ #167 disk_readblock: block 6
+
+@@@ #168 disk_readblock: block 7
+FINAL MESSAGE: 'FS_WRITEBLOCK user2 /dir2/file6 0'
+
+@@@ #169 close 5
+found connection at 5
+
+@@@ #170 disk_readblock: block 0
+
+@@@ #171 disk_readblock: block 2
+
+@@@ #172 disk_readblock: block 4
+
+@@@ #173 disk_readblock: block 6
+
+@@@ #174 disk_readblock: block 7
+FINAL MESSAGE: 'FS_READBLOCK user2 /dir2/file6 0'
+
+@@@ #175 close 5
+found connection at 5
+
+@@@ #176 disk_readblock: block 0
+
+@@@ #177 disk_readblock: block 2
+
+@@@ #178 disk_readblock: block 1
+FINAL MESSAGE: 'FS_DELETE user2 /dir1'
+
+@@@ #179 close 5
+found connection at 5
+
+@@@ #180 disk_readblock: block 0
+
+@@@ #181 disk_readblock: block 2
+
+@@@ #182 disk_readblock: block 1
+
+@@@ #183 disk_writeblock: block 2
+
+@@@ #184 send 5 22 FS_DELETE user1 /dir1
+FINAL MESSAGE: 'FS_DELETE user1 /dir1'
+
+@@@ #185 close 5
+found connection at 5
+
+@@@ #186 disk_readblock: block 0
+
+@@@ #187 disk_readblock: block 2
+
+@@@ #188 disk_readblock: block 3
+
+@@@ #189 disk_writeblock: block 2
+
+@@@ #190 send 5 22 FS_DELETE user1 /file
+FINAL MESSAGE: 'FS_DELETE user1 /file'
+
+@@@ #191 close 5
+found connection at 5
+
+@@@ #192 disk_readblock: block 0
+
+@@@ #193 disk_readblock: block 2
+FINAL MESSAGE: 'FS_DELETE user2 /file'
+
+@@@ #194 close 5
+found connection at 5
+
+@@@ #195 disk_readblock: block 0
+
+@@@ #196 disk_readblock: block 2
+
+@@@ #197 disk_readblock: block 4
+
+@@@ #198 disk_readblock: block 6
+
+@@@ #199 disk_readblock: block 7
+
+@@@ #200 disk_writeblock: block 6
+
+@@@ #201 send 5 28 FS_DELETE user1 /dir2/file6
+FINAL MESSAGE: 'FS_DELETE user1 /dir2/file6'
+
+@@@ #202 close 5
+found connection at 5
+
+@@@ #203 disk_readblock: block 0
+
+@@@ #204 disk_readblock: block 2
+
+@@@ #205 disk_readblock: block 4
+
+@@@ #206 disk_readblock: block 6
+FINAL MESSAGE: 'FS_DELETE user2 /dir2/file6'
+
+@@@ #207 close 5

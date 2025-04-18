@@ -1,0 +1,73 @@
+
+@@@ #1 disk_readblock: block 0
+Listening on port number: 10000
+
+@@@ #2 port 10000
+found connection at 5
+
+@@@ #3 disk_readblock: block 0
+
+@@@ #4 disk_writeblock: block 1
+
+@@@ #5 disk_writeblock: block 2
+
+@@@ #6 disk_writeblock: block 0
+
+@@@ #7 send 5 23 FS_CREATE user1 /dir d
+FINAL MESSAGE: 'FS_CREATE user1 /dir d'
+
+@@@ #8 close 5
+found connection at 5
+
+@@@ #9 disk_readblock: block 0
+
+@@@ #10 disk_readblock: block 2
+
+@@@ #11 disk_readblock: block 1
+
+@@@ #12 disk_writeblock: block 3
+
+@@@ #13 disk_writeblock: block 4
+
+@@@ #14 disk_writeblock: block 1
+
+@@@ #15 send 5 30 FS_CREATE user1 /dir/sophie f
+FINAL MESSAGE: 'FS_CREATE user1 /dir/sophie f'
+
+@@@ #16 close 5
+found connection at 5
+
+@@@ #17 disk_readblock: block 0
+
+@@@ #18 disk_readblock: block 2
+
+@@@ #19 disk_readblock: block 1
+
+@@@ #20 disk_readblock: block 4
+
+@@@ #21 disk_writeblock: block 5
+
+@@@ #22 disk_writeblock: block 4
+
+@@@ #23 send 5 29 FS_CREATE user3 /dir/anand d
+FINAL MESSAGE: 'FS_CREATE user3 /dir/anand d'
+
+@@@ #24 close 5
+found connection at 5
+
+@@@ #25 disk_readblock: block 0
+
+@@@ #26 disk_readblock: block 2
+
+@@@ #27 disk_readblock: block 1
+
+@@@ #28 disk_readblock: block 4
+
+@@@ #29 disk_writeblock: block 6
+
+@@@ #30 disk_writeblock: block 4
+
+@@@ #31 send 5 29 FS_CREATE user2 /dir/david d
+FINAL MESSAGE: 'FS_CREATE user2 /dir/david d'
+
+@@@ #32 close 5
