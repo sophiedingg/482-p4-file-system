@@ -1,0 +1,7 @@
+unameOut="$(uname -s)"
+case "${unameOut}" in
+    Linux*)     script=showfs;;
+    Darwin*)    script=showfs_macos;;
+    *)          script="UNKNOWN:${unameOut}"
+esac
+./${script}
